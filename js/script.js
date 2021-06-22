@@ -7,7 +7,7 @@ img = new Image();
 canvas = document.getElementById("Canvas1");
 context = canvas.getContext("2d");
 
-img.src = '../img/m3-shot_6-001.png';
+img.src = 'img/m3-shot_6-001.png';
 img.onload = function () {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(img, 0, 0, 900, 506);
