@@ -20,7 +20,7 @@ function StartAnimation() {
 function AnimateNow() {
     count++;
     format = String(count).padStart(3, 0)
-    img.src = '../img/m3-shot_6-' + format + '.png';
+    img.src = 'img/m3-shot_6-' + format + '.png';
 
     img.onload = function () {
         context.clearRect(0, 0, canvas.width, canvas.height);
@@ -43,6 +43,6 @@ function ResetCanvas() {
     count = 0;
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(img, 0, 0, 900, 506);
-    img.src = '../img/m3-shot_6-001.png';
+    img.src = 'img/m3-shot_6-001.png';
 }
 
